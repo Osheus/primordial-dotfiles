@@ -1,0 +1,137 @@
+* {
+	/* Colour Selection */
+	bg: #000000;
+	accent: #41BDCE;
+	txt: #DAD2D8;
+	highlight: #6B7B8C;	
+}
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       800px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      5px solid;
+    border-radius:               10px;
+    border-color:                @accent;
+    cursor:                      "default";
+    background-color:            @bg;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     30px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @accent;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               0px;
+    border-color:                @highlight;
+    background-color:            transparent;
+    text-color:                  @txt;
+    children:                    [ "prompt", "message" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+prompt {
+    enabled:                     true;
+    padding:                     12px;
+    border-radius:               8px;
+    background-color:            @accent;
+    text-color:                  @bg;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    padding: 12px;
+    border-radius: 8px;
+    background-color:            @accent;
+    text-color:                  @bg;
+
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     3;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @highlight;
+    background-color:            transparent;
+    text-color:                  @txt;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     40px 10px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @highlight;
+    background-color:            @bg;
+    text-color:                  @txt;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        "Symbols Nerd Font Mono 32";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            @highlight;
+    text-color:                  @bg;
+}
+
+
