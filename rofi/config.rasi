@@ -1,0 +1,10 @@
+configuration {
+	display-drun: "";
+	drun-display-format: "{icon} {name}";
+	font: "Orbitron 10";
+	modi: "drun";
+	show-icons: true;
+
+}
+
+@theme "/home/joshua/.config/rofi/theme.rasi"

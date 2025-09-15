@@ -1,0 +1,77 @@
+* {
+	/* Colour Selection */
+	bg: #000000;
+	border-colour: #41BDCE;
+	fg-alt: #42CF99;
+	txt: #DAD2D8;
+	highlight: #6b7b8c;
+
+	background-color: @bg;
+	text-color: @txt;
+
+}
+
+window {
+    height: 600;
+    width: 600;
+
+    border: 5;
+    border-radius: 10;
+    border-color: @border-colour;
+}
+
+mainbox {
+    spacing: 0;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    padding: 14;
+}
+
+entry {
+	placeholder: "Search Apps";
+}
+
+message {
+	padding: 10; 
+}
+
+listview {
+	padding: 8;
+	border-radius: 0 0 10 10;
+	border: 2 2 2 2;
+	border-color: @bg;
+	dynamic: false;
+}
+
+textbox {
+	background-color: inherit;
+}
+
+error-message {
+	border: 20 20 20 20;
+}
+
+prompt {
+	margin: 0 10 0 0;
+}
+
+element {
+	padding: 5;
+	vertical-align: 0.5;
+	border-radius: 10;
+	background-color: inherit;
+}
+
+element.selected {
+	background-color: @highlight;
+}
+
+element-text, element-icon {
+	size: 40;
+	margin: 0 10 0 0;
+	vertical-align: 0.5;
+	background-color: inherit;
+	highlight: @border-colour;
+}
