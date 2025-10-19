@@ -1,7 +1,7 @@
 configuration {
 	display-drun: "";
 	drun-display-format: "{icon} {name}";
-	font: "Fantasque Sans Mono 10";
+	font: "Orbitron 10";
 	modi: "drun";
 	show-icons: true;
 	hover-select: true;
