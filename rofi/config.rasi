@@ -1,10 +1,12 @@
 configuration {
 	display-drun: "";
 	drun-display-format: "{icon} {name}";
-	font: "Orbitron 10";
+	font: "Fantasque Sans Mono 10";
 	modi: "drun";
 	show-icons: true;
-
+	hover-select: true;
+	me-select-entry: '';
+	me-accept-entry: 'MousePrimary';
 }
 
 @theme "/home/joshua/.config/rofi/theme.rasi"
